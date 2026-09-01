@@ -198,7 +198,7 @@ class SlackAIAgent {
             if (!options.force){
                 const existing = await findRecentAnalysis(memberInfo.id, memberInfo.name, this.dedupeWindowHours);
                 if (existing){
-                    log.info(`Skipping ${memberInfo.name}: already analyzed (id ${existing.id}) at ${existing.analyzed_at}`);
+                    log.info(`Skipping ${memberInfo.name}: already analyzed (id ${existing.id}) at ${existing.analyzedAt}`);
                     return { skipped: true, reason: 'already_analyzed', existingAnalysisId: existing.id };
                 }
             }
