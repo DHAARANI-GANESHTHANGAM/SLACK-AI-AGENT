@@ -148,3 +148,4 @@ export async function closeDatabase(){
     }
     console.log('[INFO] Database connection pool closed');
 }
+//end
